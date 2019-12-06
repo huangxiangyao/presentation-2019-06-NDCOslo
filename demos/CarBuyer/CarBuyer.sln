@@ -17,6 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBuyer.ServerSide", "CarB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBuyer.ClientSide", "CarBuyer.ClientSide\CarBuyer.ClientSide.csproj", "{D046CE62-DFAC-4AA2-BCA8-F7B4AC6943B6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{26A3A8EC-8030-42B6-BF40-3A2A29B4BA51}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

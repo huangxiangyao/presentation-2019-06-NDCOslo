@@ -34,6 +34,6 @@
 <SummaryFooter Order="@Order" NextUrl="options" />
 
 @functions {
-    [CascadingParameter] ProductCatalog Catalog { get; set; }
-    [CascadingParameter] CustomerOrder Order { get; set; }
+    [CascadingParameter] public ProductCatalog Catalog { get; set; }
+    [CascadingParameter] public CustomerOrder Order { get; set; }
 }

@@ -1,5 +1,5 @@
 ﻿@page "/delivery"
-@inject IUriHelper UriHelper
+@inject NavigationManager NavigationManager
 
 <div class="content">
     <EditForm EditContext="@editContext">
@@ -30,7 +30,7 @@
     EditContext editContext;
     [CascadingParameter] CustomerOrder Order { get; set; }
 
-    protected override void OnInit()
+    protected override void OnInitialized()
     {
         editContext = new EditContext(Order.Delivery ?? new object());
     }
@@ -40,7 +40,7 @@
         if (editContext.Validate())
         {
             // TODO: Actually store order somewhere
-            UriHelper.NavigateTo("done");
+            NavigationManager.NavigateTo("done");
         }
     }
 }
